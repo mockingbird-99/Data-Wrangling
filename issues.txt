@@ -1,0 +1,27 @@
+Quality
+
+1. Missing values in "in_reply_to_status","in_reply_to_user_id", "retweeted_status_id", "retweeted_status_user_id", "retweeted_status_timestamp" columns of twitter_archive_enhanced
+
+2. Missing or wrong values in name column of twitter_archive_enhanced. (None, the, quite. such, etc)
+
+3. Mixed cases for p1, p2 and p3. (Upper and Lower cases)
+
+4. href tag in source column of twitter_archive_enhanced
+
+5. Null values in expanded_urls column in twitter_archive_enhanced
+ 
+6. timestamp in twitter_archive_enhanced is of object datatype instead of datatype   
+ 
+7. tweet_id in twitter_archive_enhanced is int data type instead of string data type 
+ 
+8.  tweet_id in image_predictions is int data type instead of string data type 
+
+9. tweet_id in tweet_json is int data type instead of string data type 
+
+10. Some tweets in twitter_archive_enhanced have retweets. i.e., duplicates
+
+11. Some tweets in twitter_archive_enhanced have replies. i.e., duplicates
+
+ Tidiness
+1. All three tables should be merged.
+2. Text column in `twitter_archive_enhanced` contains both texts and a link
